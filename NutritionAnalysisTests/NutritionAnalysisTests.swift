@@ -6,11 +6,10 @@
 //  Copyright © 2021 BankMisr. All rights reserved.
 //
 
-import XCTest
 @testable import NutritionAnalysis
+import XCTest
 
 class NutritionAnalysisTests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -30,5 +29,4 @@ class NutritionAnalysisTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }
