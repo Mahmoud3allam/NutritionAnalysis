@@ -8,10 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		180DA825269A30B700084643 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA824269A30B700084643 /* AppDelegate.swift */; };
-		180DA829269A30B700084643 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA828269A30B700084643 /* ViewController.swift */; };
 		180DA82E269A30BB00084643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180DA82D269A30BB00084643 /* Assets.xcassets */; };
 		180DA831269A30BB00084643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180DA82F269A30BB00084643 /* LaunchScreen.storyboard */; };
 		180DA83C269A30BB00084643 /* NutritionAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA83B269A30BB00084643 /* NutritionAnalysisTests.swift */; };
+		180DA85F269A387B00084643 /* IngredientAnalizerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA857269A387B00084643 /* IngredientAnalizerContainerView.swift */; };
+		180DA860269A387B00084643 /* IngredientAnalizerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA858269A387B00084643 /* IngredientAnalizerPresenter.swift */; };
+		180DA861269A387B00084643 /* IngredientAnalizerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA859269A387B00084643 /* IngredientAnalizerRouter.swift */; };
+		180DA862269A387B00084643 /* IngredientAnalizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA85A269A387B00084643 /* IngredientAnalizerViewController.swift */; };
+		180DA863269A387B00084643 /* IngredientAnalizerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA85B269A387B00084643 /* IngredientAnalizerProtocols.swift */; };
+		180DA864269A387B00084643 /* IngredientAnalizerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA85C269A387B00084643 /* IngredientAnalizerInteractor.swift */; };
+		180DA865269A387B00084643 /* IngredientAnalizerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA85D269A387B00084643 /* IngredientAnalizerEntity.swift */; };
+		180DA86E269A38F200084643 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA86D269A38F200084643 /* BaseNavigationController.swift */; };
+		180DA872269A395200084643 /* ColorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA871269A395200084643 /* ColorTypes.swift */; };
+		180DA875269A39A900084643 /* UIColor + DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA874269A39A900084643 /* UIColor + DarkMode.swift */; };
+		180DA879269A3A4000084643 /* FontTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DA878269A3A4000084643 /* FontTypes.swift */; };
+		180DA881269A3CA800084643 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180DA87B269A3CA700084643 /* Cairo-Regular.ttf */; };
+		180DA882269A3CA800084643 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180DA87C269A3CA700084643 /* Cairo-Bold.ttf */; };
+		180DA883269A3CA800084643 /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180DA87D269A3CA700084643 /* Cairo-SemiBold.ttf */; };
+		180DA885269A3CA800084643 /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180DA87F269A3CA800084643 /* Cairo-Light.ttf */; };
+		183CA7C0269A3EFA009E2749 /* UIViewController + StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CA7BF269A3EFA009E2749 /* UIViewController + StatusBar.swift */; };
 		65FDC0BD8961FF7A3861ACED /* Pods_NutritionAnalysisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946862E37A9BBF6703ED8D1C /* Pods_NutritionAnalysisTests.framework */; };
 		B16D2D95F731827FAD8A1B3D /* Pods_NutritionAnalysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEF263F3A1E27C515EF6A91 /* Pods_NutritionAnalysis.framework */; };
 /* End PBXBuildFile section */
@@ -29,13 +44,28 @@
 /* Begin PBXFileReference section */
 		180DA821269A30B700084643 /* NutritionAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		180DA824269A30B700084643 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		180DA828269A30B700084643 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		180DA82D269A30BB00084643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180DA830269A30BB00084643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180DA832269A30BB00084643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180DA837269A30BB00084643 /* NutritionAnalysisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutritionAnalysisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180DA83B269A30BB00084643 /* NutritionAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionAnalysisTests.swift; sourceTree = "<group>"; };
 		180DA83D269A30BB00084643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180DA857269A387B00084643 /* IngredientAnalizerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientAnalizerContainerView.swift; sourceTree = "<group>"; };
+		180DA858269A387B00084643 /* IngredientAnalizerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientAnalizerPresenter.swift; sourceTree = "<group>"; };
+		180DA859269A387B00084643 /* IngredientAnalizerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientAnalizerRouter.swift; sourceTree = "<group>"; };
+		180DA85A269A387B00084643 /* IngredientAnalizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientAnalizerViewController.swift; sourceTree = "<group>"; };
+		180DA85B269A387B00084643 /* IngredientAnalizerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientAnalizerProtocols.swift; sourceTree = "<group>"; };
+		180DA85C269A387B00084643 /* IngredientAnalizerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientAnalizerInteractor.swift; sourceTree = "<group>"; };
+		180DA85D269A387B00084643 /* IngredientAnalizerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientAnalizerEntity.swift; sourceTree = "<group>"; };
+		180DA86D269A38F200084643 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		180DA871269A395200084643 /* ColorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTypes.swift; sourceTree = "<group>"; };
+		180DA874269A39A900084643 /* UIColor + DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + DarkMode.swift"; sourceTree = "<group>"; };
+		180DA878269A3A4000084643 /* FontTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTypes.swift; sourceTree = "<group>"; };
+		180DA87B269A3CA700084643 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		180DA87C269A3CA700084643 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		180DA87D269A3CA700084643 /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		180DA87F269A3CA800084643 /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
+		183CA7BF269A3EFA009E2749 /* UIViewController + StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + StatusBar.swift"; sourceTree = "<group>"; };
 		1AEF263F3A1E27C515EF6A91 /* Pods_NutritionAnalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutritionAnalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B2790139B2C14CCE87528DE /* Pods-NutritionAnalysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionAnalysis.debug.xcconfig"; path = "Target Support Files/Pods-NutritionAnalysis/Pods-NutritionAnalysis.debug.xcconfig"; sourceTree = "<group>"; };
 		288E914E007F493674D55036 /* Pods-NutritionAnalysisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionAnalysisTests.release.xcconfig"; path = "Target Support Files/Pods-NutritionAnalysisTests/Pods-NutritionAnalysisTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,11 +117,12 @@
 		180DA823269A30B700084643 /* NutritionAnalysis */ = {
 			isa = PBXGroup;
 			children = (
-				180DA824269A30B700084643 /* AppDelegate.swift */,
-				180DA828269A30B700084643 /* ViewController.swift */,
-				180DA82D269A30BB00084643 /* Assets.xcassets */,
-				180DA82F269A30BB00084643 /* LaunchScreen.storyboard */,
-				180DA832269A30BB00084643 /* Info.plist */,
+				180DA870269A391900084643 /* Constants */,
+				180DA86F269A391000084643 /* Extensions */,
+				180DA86C269A38E200084643 /* BaseClasses */,
+				180DA84F269A373B00084643 /* NetworkLayer */,
+				180DA852269A376C00084643 /* Main */,
+				180DA851269A374A00084643 /* Modules */,
 			);
 			path = NutritionAnalysis;
 			sourceTree = "<group>";
@@ -103,6 +134,172 @@
 				180DA83D269A30BB00084643 /* Info.plist */,
 			);
 			path = NutritionAnalysisTests;
+			sourceTree = "<group>";
+		};
+		180DA84F269A373B00084643 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				180DA854269A382800084643 /* Workers */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		180DA851269A374A00084643 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				180DA855269A386900084643 /* IngredientAnalizer  */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		180DA852269A376C00084643 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				180DA82D269A30BB00084643 /* Assets.xcassets */,
+				180DA87A269A3C9100084643 /* Fonts */,
+				180DA832269A30BB00084643 /* Info.plist */,
+				180DA824269A30B700084643 /* AppDelegate.swift */,
+				180DA82F269A30BB00084643 /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		180DA854269A382800084643 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		180DA855269A386900084643 /* IngredientAnalizer  */ = {
+			isa = PBXGroup;
+			children = (
+				180DA86A269A389B00084643 /* View */,
+				180DA869269A389600084643 /* Interactor */,
+				180DA868269A388B00084643 /* Presenter */,
+				180DA867269A388700084643 /* Entities */,
+				180DA866269A388300084643 /* Router */,
+				180DA85B269A387B00084643 /* IngredientAnalizerProtocols.swift */,
+			);
+			path = "IngredientAnalizer ";
+			sourceTree = "<group>";
+		};
+		180DA866269A388300084643 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				180DA859269A387B00084643 /* IngredientAnalizerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		180DA867269A388700084643 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				180DA85D269A387B00084643 /* IngredientAnalizerEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		180DA868269A388B00084643 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				180DA858269A387B00084643 /* IngredientAnalizerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		180DA869269A389600084643 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				180DA85C269A387B00084643 /* IngredientAnalizerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		180DA86A269A389B00084643 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				180DA85A269A387B00084643 /* IngredientAnalizerViewController.swift */,
+				180DA86B269A389F00084643 /* Layout */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		180DA86B269A389F00084643 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				180DA857269A387B00084643 /* IngredientAnalizerContainerView.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		180DA86C269A38E200084643 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				180DA86D269A38F200084643 /* BaseNavigationController.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		180DA86F269A391000084643 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				183CA7BE269A3EEE009E2749 /* UIViewController */,
+				180DA873269A39A000084643 /* UIColor */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		180DA870269A391900084643 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				180DA877269A3A2200084643 /* FontTypes */,
+				180DA876269A3A1800084643 /* ColorTypes */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		180DA873269A39A000084643 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				180DA874269A39A900084643 /* UIColor + DarkMode.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		180DA876269A3A1800084643 /* ColorTypes */ = {
+			isa = PBXGroup;
+			children = (
+				180DA871269A395200084643 /* ColorTypes.swift */,
+			);
+			path = ColorTypes;
+			sourceTree = "<group>";
+		};
+		180DA877269A3A2200084643 /* FontTypes */ = {
+			isa = PBXGroup;
+			children = (
+				180DA878269A3A4000084643 /* FontTypes.swift */,
+			);
+			path = FontTypes;
+			sourceTree = "<group>";
+		};
+		180DA87A269A3C9100084643 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				180DA87C269A3CA700084643 /* Cairo-Bold.ttf */,
+				180DA87F269A3CA800084643 /* Cairo-Light.ttf */,
+				180DA87B269A3CA700084643 /* Cairo-Regular.ttf */,
+				180DA87D269A3CA700084643 /* Cairo-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		183CA7BE269A3EEE009E2749 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				183CA7BF269A3EFA009E2749 /* UIViewController + StatusBar.swift */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 		6C22B4FA7AA6CD050A6893CD /* Frameworks */ = {
@@ -212,8 +409,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180DA881269A3CA800084643 /* Cairo-Regular.ttf in Resources */,
 				180DA831269A30BB00084643 /* LaunchScreen.storyboard in Resources */,
+				180DA883269A3CA800084643 /* Cairo-SemiBold.ttf in Resources */,
+				180DA882269A3CA800084643 /* Cairo-Bold.ttf in Resources */,
 				180DA82E269A30BB00084643 /* Assets.xcassets in Resources */,
+				180DA885269A3CA800084643 /* Cairo-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,8 +550,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180DA829269A30B700084643 /* ViewController.swift in Sources */,
+				180DA865269A387B00084643 /* IngredientAnalizerEntity.swift in Sources */,
+				180DA85F269A387B00084643 /* IngredientAnalizerContainerView.swift in Sources */,
+				180DA879269A3A4000084643 /* FontTypes.swift in Sources */,
+				180DA875269A39A900084643 /* UIColor + DarkMode.swift in Sources */,
+				180DA860269A387B00084643 /* IngredientAnalizerPresenter.swift in Sources */,
+				180DA864269A387B00084643 /* IngredientAnalizerInteractor.swift in Sources */,
+				180DA863269A387B00084643 /* IngredientAnalizerProtocols.swift in Sources */,
+				180DA872269A395200084643 /* ColorTypes.swift in Sources */,
 				180DA825269A30B700084643 /* AppDelegate.swift in Sources */,
+				183CA7C0269A3EFA009E2749 /* UIViewController + StatusBar.swift in Sources */,
+				180DA861269A387B00084643 /* IngredientAnalizerRouter.swift in Sources */,
+				180DA86E269A38F200084643 /* BaseNavigationController.swift in Sources */,
+				180DA862269A387B00084643 /* IngredientAnalizerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +717,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X43742Y6HU;
-				INFOPLIST_FILE = NutritionAnalysis/Info.plist;
+				INFOPLIST_FILE = NutritionAnalysis/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,7 +736,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X43742Y6HU;
-				INFOPLIST_FILE = NutritionAnalysis/Info.plist;
+				INFOPLIST_FILE = NutritionAnalysis/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
