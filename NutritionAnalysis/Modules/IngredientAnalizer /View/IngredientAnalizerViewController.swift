@@ -14,15 +14,36 @@ class IngredientAnalizerViewController: UIViewController, IngredientAnalizerView
         return view
     }()
 
+    private let analizyButton: UIBarButtonItem = {
+        var button = UIBarButtonItem(title: "Analize", style: .plain, target: self, action: nil)
+        button.tintColor = .systemBlue
+        button.isEnabled = false
+        return button
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
+        self.setupAnalizeButton()
         self.title = "Ingredient Analizer"
-        // Do any additional setup after loading the view.
+        self.bindContainerViewActions()
     }
 
     override func loadView() {
         super.loadView()
         self.view = containerView
+    }
+
+    private func setupAnalizeButton() {
+        self.navigationItem.rightBarButtonItems = [analizyButton]
+    }
+
+    func bindContainerViewActions() {
+        self.containerView.isAnalizeEnabled = { [weak self] isEnabled in
+            guard let self = self else {
+                return
+            }
+            self.analizyButton.isEnabled = isEnabled
+        }
     }
 }

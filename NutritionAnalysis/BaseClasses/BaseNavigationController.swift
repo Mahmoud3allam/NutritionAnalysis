@@ -19,14 +19,14 @@ class BaseNavigationController: UINavigationController {
     }
 
     private func setupNavigationBarBehaviors() {
-        self.navigationBar.prefersLargeTitles = true
+        self.navigationBar.prefersLargeTitles = false
         self.navigationBar.backgroundColor = ColorType.background.value
         self.navigationBar.barTintColor = ColorType.background.value
         self.navigationBar.tintColor = ColorType.text.value
         self.navigationBar.isTranslucent = false
         let textAttributeWhenSmallTitle = [NSAttributedString.Key.foregroundColor: ColorType.text.value, NSAttributedString.Key.font: UIFont(name: FontTypes.boldFont.name, size: 20)]
         self.navigationBar.titleTextAttributes = textAttributeWhenSmallTitle as [NSAttributedString.Key: Any]
-        let textAttributeWhenLargeTitle = [NSAttributedString.Key.foregroundColor: ColorType.text.value, NSAttributedString.Key.font: UIFont(name: FontTypes.boldFont.name, size: 20)]
+        let textAttributeWhenLargeTitle = [NSAttributedString.Key.foregroundColor: ColorType.text.value, NSAttributedString.Key.font: UIFont(name: FontTypes.boldFont.name, size: 25)]
         self.navigationBar.largeTitleTextAttributes = textAttributeWhenLargeTitle as [NSAttributedString.Key: Any]
         self.setStatusBarBackGroundColor(withColor: ColorType.background.value)
     }
