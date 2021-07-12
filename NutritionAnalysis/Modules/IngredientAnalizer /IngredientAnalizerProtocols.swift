@@ -15,9 +15,12 @@ protocol IngredientAnalizerPresenterProtocol {
     var view: IngredientAnalizerViewProtocol? { get set }
 
     func viewDidLoad()
+    func onTapAnalise(with ingredient: String)
 }
 
-protocol IngredientAnalizerRouterProtocol {}
+protocol IngredientAnalizerRouterProtocol {
+    func navigateToIngListScene(with ingredient: String)
+}
 
 protocol IngredientAnalizerInteractorInPutProtocol {
     var presenter: IngredientAnalizerInteractorOutPutProtocol? { get set }

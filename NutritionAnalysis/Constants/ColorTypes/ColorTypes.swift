@@ -12,6 +12,7 @@ enum ColorType {
     case background
     case text
     case buttonsBg
+    case pinkishGrey
 
     // Here we can provide a color in a light mode and other one for the dark mode system based.
     var value: UIColor {
@@ -21,7 +22,9 @@ enum ColorType {
         case .text:
             return UIColor.dynamicColor(light: #colorLiteral(red: 0.07057783753, green: 0.07059488446, blue: 0.07057412714, alpha: 1), dark: .white)
         case .buttonsBg:
-            return UIColor.dynamicColor(light: #colorLiteral(red: 0.1843137255, green: 0.1725490196, blue: 0.2980392157, alpha: 1), dark: .white)
+            return UIColor.dynamicColor(light: #colorLiteral(red: 0.4666666667, green: 0.5960784314, blue: 0.9529411765, alpha: 1), dark: #colorLiteral(red: 0.4666666667, green: 0.5960784314, blue: 0.9529411765, alpha: 1))
+        case .pinkishGrey:
+            return UIColor.dynamicColor(light: #colorLiteral(red: 0.9764705882, green: 0.9764705882, blue: 0.9764705882, alpha: 1), dark: .clear)
         }
     }
 }

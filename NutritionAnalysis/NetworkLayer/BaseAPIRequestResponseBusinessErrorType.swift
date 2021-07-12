@@ -10,6 +10,7 @@ import Foundation
 
 enum BaseAPIRequestResponseBusinessErrorType: Error {
     case providerError
+
     var message: String {
         switch self {
         case .providerError:

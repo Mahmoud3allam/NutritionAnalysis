@@ -15,7 +15,7 @@ class IngredientAnalizerViewController: UIViewController, IngredientAnalizerView
     }()
 
     private let analizyButton: UIBarButtonItem = {
-        var button = UIBarButtonItem(title: "Analize", style: .plain, target: self, action: nil)
+        var button = UIBarButtonItem(title: "Analize", style: .plain, target: self, action: #selector(didTappedAnalize))
         button.tintColor = .systemBlue
         button.isEnabled = false
         return button
@@ -27,6 +27,11 @@ class IngredientAnalizerViewController: UIViewController, IngredientAnalizerView
         self.setupAnalizeButton()
         self.title = "Ingredient Analizer"
         self.bindContainerViewActions()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.prefersLargeTitles = false
     }
 
     override func loadView() {
@@ -45,5 +50,9 @@ class IngredientAnalizerViewController: UIViewController, IngredientAnalizerView
             }
             self.analizyButton.isEnabled = isEnabled
         }
+    }
+
+    @objc func didTappedAnalize() {
+        self.presenter.onTapAnalise(with: self.containerView.ingredientTextView.text)
     }
 }

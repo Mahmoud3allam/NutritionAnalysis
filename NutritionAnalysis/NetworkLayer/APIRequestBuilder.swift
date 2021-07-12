@@ -21,7 +21,7 @@ protocol APIRequestBuilder {
 
 extension APIRequestBuilder {
     var baseUrl: String {
-        "https://api-staging.nejmo.com/api/"
+        NetworkConstant.edamamBaseURL.rawValue
     }
 
     var headers: [String: String]? {

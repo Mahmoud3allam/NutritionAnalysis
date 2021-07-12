@@ -22,4 +22,8 @@ class IngredientAnalizerPresenter: IngredientAnalizerPresenterProtocol, Ingredie
     func viewDidLoad() {
         print("ViewDidLoad")
     }
+
+    func onTapAnalise(with ingredient: String) {
+        self.router.navigateToIngListScene(with: ingredient)
+    }
 }

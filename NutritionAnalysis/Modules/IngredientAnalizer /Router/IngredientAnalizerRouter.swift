@@ -20,4 +20,14 @@ class IngredientAnalizerRouter: IngredientAnalizerRouterProtocol {
         router.viewController = view
         return view
     }
+
+    func navigateToIngListScene(with ingredient: String) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else {
+                return
+            }
+            let ingredientListScene = IngredientsListRouter.createAnModule(ingredientToAnalize: ingredient)
+            self.viewController?.navigationController?.pushViewController(ingredientListScene, animated: true)
+        }
+    }
 }
